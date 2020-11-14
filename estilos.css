@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+	font-family: Raleway;
+	text-transform: capitalize;
+}
+body {
+	
+	background-size: cover;
+	background-image: url('portada.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: white;
+
+	
+}
+img {
+	cursor: pointer;
+	animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)};
+}
+img:hover {
+	transform: translate(10px);
+	transition: 1s;
+
+
+}
+header {
+	width: 90%;
+	margin: auto;
+	background: transparent;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1} 
+}
+header .logo {
+	
+	background: transparent;
+}
+header .logo h2 {
+	color: white;
+
+}
+header .categorias {
+	
+	background: transparent;
+	flex-wrap: wrap;
+	text-align: right;
+	align-items: center;
+}
+header .categorias a {
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	padding: 5px;
+	margin-left: 10px;
+}
+header .categorias a:hover {
+	border: none;
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+
+
+
+}
+main {
+	width: 100%;
+	
+}
+main .portada {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 100px;
+	
+}
+main .portada h1 {
+	width: 100%;
+	color:white;
+	text-align: center;
+
+	margin-top: 100px;
+	
+}
+main .portada p {
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+main .servicios {
+	width: 100%;
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 10px;
+
+}
+main .servicios h2 {
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+}
+main .servicios .principal {
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	background: yellow;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(250,250,250,1);
+}
+main .servicios .carta {
+	width: 30%;
+	padding: 40px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: white;
+}
+main .servicios .carta .contenido-carta {
+	width: 90%;
+	padding: 10px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+main .servicios .carta .contenido-carta i {
+	width: 100%;
+	text-align: center;
+}
+main .servicios .carta .contenido-carta h3 {
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
+}
+footer .info a {
+	padding: 10px;
+	color: white;
+}
